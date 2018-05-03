@@ -67,8 +67,8 @@ class AmicsHandler(BaseHandler):
         return self.render_template("amics.html", params=params)
 
 app = webapp2.WSGIApplication([
-    webapp2.Route('/index', MainHandler),
-    webapp2.Route("/programacio", ProgramacioHandler),
+    webapp2.Route('/', MainHandler),
+    webapp2.Route("/programació", ProgramacioHandler),
     webapp2.Route('/entrades', EntradesHandler),
     webapp2.Route('/espai', EspaiHandler),
     webapp2.Route("/dades", DadesHandler),
